@@ -582,6 +582,10 @@ video {
   display: flex;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-\[50\%\] {
   width: 50%;
 }
@@ -604,6 +608,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-start {
@@ -704,6 +712,21 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-\[40\%\] {
+  padding-top: 40%;
+  padding-bottom: 40%;
+}
+
+.py-\[20\%\] {
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+.py-\[25\%\] {
+  padding-top: 25%;
+  padding-bottom: 25%;
+}
+
 .text-center {
   text-align: center;
 }
@@ -728,6 +751,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -774,12 +802,9 @@ body {
   background-color: #101827;
 }
 
-.font-serif {
-  font-family: Times, serif;
-}
-
-.font-helvetica {
-  font-family: Helvetica, sans-serif;
+.hover\:bg-amber-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 211 77 / var(--tw-bg-opacity));
 }
 
 .hover\:underline:hover {
