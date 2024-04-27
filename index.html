@@ -1,14 +1,62 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="./temp-output.css">
+        <link rel="stylesheet" href="./output.css">
     </head>
-    <body>
-        <div class="items-center mx-auto py-[25%]">
-            <div class="hover:bg-amber-300 hover:underline text-center mx-auto">
-                <h1 class="text-white text-7xl bold">
-                    Click Here to view Museum
-                </h1>
+    <body> 
+        <div>
+            <div class="flex flex-col">
+                <div class="NAVBAR py-6 px-8 flex flex-row justify-between text-gray-200 bg-gray-900 border-2 border-gray-900 border-b-stone-200/10">
+                    <div class="flex flex-col">
+                        <h1> R and A GENOCIDE EXHIBITION. </h1>
+                        <p class="text-xs text-gray-400">understanding the power of foreign intervention</p>
+                    </div>
+                    <div class="flex flex-row gap-x-8 mr-8 items-center">
+                        <div class="flex flex-row">
+                            <a href="./pages/rwanda.html"><p class="hover:underline text-medium font-semibold font-helvetica">rwanda</p></a>
+                            <p class="ml-8">|</p>
+                        </div>
+                        <div class="flex flex-row">
+                            <a href="./pages/kosovo.html"><p class="hover:underline text-medium font-semibold font-helvetica">kosovo</p></a>
+                            <p class="ml-8">|</p>
+                        </div>
+                        <div class="flex flex-row">
+                            <a href="./pages/indonesia.html"><p class="hover:underline text-medium font-semibold font-helvetica">indonesia</p></a>
+                            <p class="ml-8">|</p>
+                        </div>
+                        <div class="flex flex-row">
+                            <a href="./pages/bosnia.html"><p class="hover:underline text-medium font-semibold font-helvetica">bosnia</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fixed top-0 left-0 w-full h-full z-[-1] overflow-hidden">
+                    <video autoplay muted loop class="w-full h-full object-cover">
+                        <source src="./assets/bombing.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-black opacity-50"></div>
+                </div>
+                <div class="DOCS flex flex-col">
+                    <div class="INTRODUCTION flex flex-col h-screen justify-center">
+                        <div class="py-8 px-16 mx-8 justify-start text-center mt-[-96px]">
+                            <h1 class="text-white text-7xl font-bold py-4">The R & A Museum</h1>
+                            <div class="text-white space-y-4">
+                                <p class="text-white text-2xl">
+                                    Welcome to the R & A Museum. This exhibition explores four different acts of genocide and the implications of their respective international interventions.
+                                </p>
+                                <p class="text-white text-2xl">
+                                    As the most powerful actors in genocide situations, the international community as a collective is somewhat responsible for preventing these events from escalating or even occurring. Debating these things is pivotal in creating better responses to genocide and potential genocide in the future, so that less suffering will happen. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[95%] mx-0 grid grid-cols-4 gap-4 items-center text-center text-2xl font-bold mb-16">
+                        <a href=""><div class="border-2 col-span-1 py-24">Rwanda</div></a>
+                        <a href=""><div class="border-2 col-span-1 py-24">Kosovo</div></a>
+                        <a href=""><div class="border-2 col-span-1 py-24">Indonesia</div></a>
+                        <a href=""><div class="border-2 col-span-1 py-24">Bosnia</div></a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </body>
