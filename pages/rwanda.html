@@ -8,8 +8,10 @@
             <div class="flex flex-col">
                 <div class="NAVBAR py-6 px-8 flex flex-row justify-between text-gray-200 bg-gray-900 border-2 border-gray-900 border-b-stone-200/10">
                     <div class="flex flex-col">
-                        <h1> R and A GENOCIDE EXHIBITION. </h1>
+                        <a href="../index.html">
+                            <h1> R and A GENOCIDE EXHIBITION. </h1>
                         <p class="text-xs text-gray-400">understanding the power of foreign intervention</p>
+                        </a>
                     </div>
                     <div class="flex flex-row gap-x-8 mr-8 items-center">
                         <div class="flex flex-row">
@@ -142,17 +144,18 @@
                                     <img
                                 class="rounded-2xl" 
                                 src="https://www.warmuseum.ca/wp-content/uploads/2020/10/P05-20140588-002-3-scaled.jpg" alt="">
-                                <p class="py-2">ROMEO DALLAIRE: Let's get hype tonight!</p>
+                                <p id="caption-1" class="py-2">General Roméo Dallaire and other Canadian peacekeepers with children at Kigali, Rwanda (Dallaire, 1994).</p>
                                 </div>
                                 <div>
                                     <img
                                 class="rounded-2xl" 
                                 src="https://media.msf.org/AssetLink/vja68fn5kqtxv83t51i3i4ikc35xt6ex.jpg" alt="">
-                                <p class="py-2">ROMEO DALLAIRE: TO PIMP A RWANDAN</p>
+                                <p class="py-2" id="caption-2">Rwandan Hutu refugees after fleeing the Zairan rebels at Goma and Bukavu (Salgado, 1994).</p>
                                 </div>                                
                                 <div><img
                                 class="rounded-2xl" 
                                 src="https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/12-04-2024-UN-Photo-Guterres-01.jpg/image1170x530cropped.jpg" alt="">
+                                <p>13th year anniversary commemorating the Rwandan genocide at the UN General Assembly Hall (Debebe, 2024).</p>
                                 </div>
                             </div>
                             </div>
@@ -276,5 +279,31 @@
                 </div>
             </div>
         </div>
+        <script>
+            const caption1 = document.getElementById('caption-1');
+            const caption2 = document.getElementById('caption-2');
+            const originalOne = 'General Roméo Dallaire and other Canadian peacekeepers with children at Kigali, Rwanda (Dallaire, 1994).'
+            const originalTwo = 'Rwandan Hutu refugees after fleeing the Zairan rebels at Goma and Bukavu (Salgado, 1994).'
+            caption1.addEventListener('mouseover', () => {
+                caption1.textContent = 'Romeo Dallaire: Let\'s get hype tonight!';
+                caption1.classList.add('text-red-400')
+              });
+              
+            caption1.addEventListener('mouseout', () => {
+                caption1.textContent = originalOne;
+                caption1.classList.remove('text-red-400')
+
+              });
+            caption2.addEventListener('mouseover', () => {
+                caption2.textContent = 'ROMEO DALLAIRE: TO PIMP A RWANDAN';
+                caption2.classList.add('text-red-400')
+              });
+              
+            caption2.addEventListener('mouseout', () => {
+                caption2.textContent = originalTwo;
+                caption2.classList.remove('text-red-400')
+
+              });
+        </script>
     </body>
 </html>
