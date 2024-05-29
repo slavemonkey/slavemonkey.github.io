@@ -1,14 +1,62 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="./temp-output.css">
+        <link rel="stylesheet" href="./output.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Ryan's scholarship portfolio</title>
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     </head>
     <body>
-        <div class="items-center mx-auto py-[25%]">
-            <div class="hover:bg-amber-300 hover:underline text-center mx-auto">
-                <h1 class="text-white text-7xl bold">
-                    Click Here to view Museum
-                </h1>
+        <div class="fixed top-0 left-0 w-full h-full z-[-1] overflow-scroll">
+            <video autoplay muted loop class="w-full h-full object-cover">
+                <source src="./assets/video1.mp4" type="video/mp4">
+            </video>
+        </div>
+            <div class="NAVBAR px-12 hover:bg-black duration-500">
+                <div class="py-6 mx-[60px] flex flex-row justify-between text-lg">
+                    <div class="TITLE text-2xl font-bold">
+                        <a href="./index.html"><h1>MY PORTFOLIO</h1></a>
+                    </div>
+                    <div class="BUTTONS">
+                        <ul class="flex flex-row gap-24">
+                            <li class="hover:underline duration-1000 hover:bg-yellow-400"><a href="./w/intro.html"><p>INTRO</p></a></li>
+                            <li class="hover:underline duration-1000 hover:bg-yellow-400"><a href="./w/cas.html"><p>CAS</p></a></li>
+                            <li class="hover:underline duration-1000 hover:bg-yellow-400"><a href="./w/cv.html"><p>CV</p></a></li>
+                            <li class="hover:underline duration-1000 hover:bg-yellow-400"><a href="./w/outro.html"><p>REFLECTION</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="CONTENT h-[calc(100vh-72px)]">
+                <div class="HERO h-full flex flex-col justify-center opacity-20 hover:opacity-100">
+                    <div class="mx-auto">
+                        <h1 class="mx-auto hover:bg-black duration-1000 text-center py-4 font-bold text-7xl">Ryan's Scholarship Portfolio</h1>
+                        <h1 class="mx-auto hover:bg-black duration-1000 text-center py-2 text-3xl">Feel free to watch the videos on each page!</h1>
+                        <h1 class="mx-auto hover:bg-black duration-1000 text-center py-2 text-3xl">Coded and built entirely with raw HTML, as always.</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="FOOTER w-full mx-auto py-8 px-4 grid lg:grid-cols-3 gap-4 text-gray-300 bg-black">
+                <div class=" mx-auto px-4">
+                    <h1 class="text-3xl font-bold">test</h1>
+                    <p class='py-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, veritatis tempora quae doloremque et maiores quos nam facere delectus id corporis! Eos, exercitationem.</p>
+                    <div class='flex md:w-[75%] my-6 justify-between'>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 items-center">
+                    
+                 </div>
+                 <div class="flex flex-col gap-2 items-center">
+                    <h1 class="font-bold text-lg font-helvetica">Contact</h1>
+                    <p>ngw10@rchk.edu.hk</p>
+                    <p>98017107</p>
+                 </div>
+                <div class="mx-auto col-span-3">
+                    <p class="text-center">
+                        © 2024 Ryan Ng. All rights reserved.
+                    </p>
+                </div>
             </div>
         </div>
     </body>
