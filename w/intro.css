@@ -646,11 +646,6 @@ video {
   width: 100%;
 }
 
-.w-min {
-  width: -moz-min-content;
-  width: min-content;
-}
-
 .max-w-\[1120px\] {
   max-width: 1120px;
 }
@@ -846,12 +841,12 @@ video {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
-.opacity-20 {
-  opacity: 0.2;
-}
-
 .opacity-10 {
   opacity: 0.1;
+}
+
+.opacity-20 {
+  opacity: 0.2;
 }
 
 .duration-1000 {
